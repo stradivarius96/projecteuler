@@ -1,11 +1,11 @@
-import { isPrime } from './utils.js';
+const utils = require('./utils.js')
 
 console.time('Run Time')
 
 let primes = [2]
 
 for (let i = 3; i < 10000; i += 2){
-    if (isPrime(i)){
+    if (utils.isPrime(i)){
         primes.push(i)
     }
 }
